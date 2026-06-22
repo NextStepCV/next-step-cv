@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Next Step CV</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<nav>
+
+
+<div class="brand" id="logoClick">
+
+
+<img src="images/logo.png">
+
+
+<div class="logo">
+Next Step CV
+</div>
+
+
+</div>
+
+
+
+
+<div class="links">
+
+<a href="#services">Services</a>
+
+<a href="#pricing">Pricing</a>
+
+<a href="#contact">Contact</a>
+
+</div>
+
+
+</nav>
+
+
+
+
+
+
+<header>
+
+
+<h1>
+Your Next Step Towards Your Dream Career
+</h1>
+
+
+<p>
+ATS-Friendly CVs that help you get noticed by recruiters
+</p>
+
+
+<a class="btn" href="#order">
+Create Your CV
+</a>
+
+
+</header>
+
+
+
+
+
+
+
+<section id="services">
+
+
+<h2>Our Services</h2>
+
+
+<div class="cards" id="servicesContainer">
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<section>
+
+
+<h2>Why Choose Us?</h2>
+
+
+<p>
+
+Professional ATS resumes designed to improve your chances with recruiters.
+
+</p>
+
+
+<div class="features">
+
+<span>✔ ATS Friendly</span>
+<span>✔ Keywords Optimization</span>
+<span>✔ Professional Format</span>
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<section>
+
+
+<h2>Before / After</h2>
+
+
+<div class="compare">
+
+
+<div class="cv-image">
+
+<h3>Before ATS</h3>
+
+<img src="images/before.png">
+
+</div>
+
+
+
+<div class="cv-image">
+
+<h3>After ATS</h3>
+
+<img src="images/after.png">
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<section id="pricing">
+
+
+<h2>Packages</h2>
+
+
+<div class="cards" id="packagesContainer">
+
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+<section id="order">
+
+
+<h2>Request Your CV</h2>
+
+
+
+<form id="cvForm">
+
+
+<input 
+id="name"
+placeholder="Your Name"
+required>
+
+
+
+<input 
+id="phone"
+placeholder="WhatsApp Number"
+required>
+
+
+
+<select id="packageSelect">
+
+</select>
+
+
+
+<textarea 
+id="message"
+placeholder="Tell us about your career">
+</textarea>
+
+
+
+<button>
+Send Request
+</button>
+
+
+
+</form>
+
+
+</section>
+
+
+
+
+
+
+
+
+<section id="contact">
+
+
+<h2>
+Contact Us
+</h2>
+
+
+
+<a class="whatsapp" 
+href="https://wa.me/201599900095?text=السلام%20عليكم%20عايز%20اطلب%20خدمة%20CV"
+target="_blank">
+
+WhatsApp
+
+</a>
+
+<a class="email"
+href="mailto:stepcv.info@gmail.com">
+
+Email
+
+</a>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- ADMIN LOGIN -->
+
+<div id="loginBox" class="hidden">
+
+
+<h2>Admin Login</h2>
+
+
+<input 
+id="password"
+type="password"
+placeholder="Password">
+
+
+<button onclick="login()">
+Login
+</button>
+
+
+</div>
+
+
+
+
+
+
+
+
+<!-- ADMIN PANEL -->
+
+<div id="adminPanel" class="hidden">
+
+
+<h2>Admin Panel</h2>
+
+
+<h3>Edit Packages</h3>
+
+
+<div id="adminPackages">
+
+</div>
+
+
+
+<button onclick="saveChanges()">
+Save Changes
+</button>
+
+<button onclick="closeAdmin()">
+Exit
+</button>
+</div>
+
+
+
+
+
+
+
+
+<footer>
+
+© 2026 Next Step CV
+
+</footer>
+
+
+
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
