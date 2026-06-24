@@ -88,6 +88,8 @@ color:#000;
 
 
 
+
+
 /* HEADER */
 
 
@@ -134,6 +136,7 @@ font-weight:bold;
 
 
 
+
 section{
 
 padding:70px 8%;
@@ -173,6 +176,7 @@ width:280px;
 padding:30px;
 border-radius:20px;
 box-shadow:0 10px 25px #ddd;
+transition:.3s;
 
 }
 
@@ -180,10 +184,12 @@ box-shadow:0 10px 25px #ddd;
 
 .card:hover{
 
-transform:translateY(-5px);
-transition:.3s;
+transform:translateY(-7px);
 
 }
+
+
+
 
 
 
@@ -213,6 +219,11 @@ border-radius:25px;
 
 
 
+
+
+/* BEFORE AFTER */
+
+
 .compare{
 
 display:flex;
@@ -229,6 +240,7 @@ flex-wrap:wrap;
 background:white;
 padding:20px;
 border-radius:20px;
+box-shadow:0 10px 25px #ddd;
 
 }
 
@@ -240,6 +252,7 @@ width:320px;
 border-radius:15px;
 
 }
+
 
 
 
@@ -297,6 +310,13 @@ color:black;
 
 
 
+
+
+
+
+/* CONTACT */
+
+
 .contact-buttons{
 
 display:flex;
@@ -346,21 +366,54 @@ border:2px solid #071b35;
 
 
 
-.whatsapp:hover{
-
-transform:translateY(-5px);
-
-}
-
-
-
+.whatsapp:hover,
 .email:hover{
 
-background:#071b35;
-color:white;
 transform:translateY(-5px);
 
 }
+
+
+
+
+
+
+
+
+
+
+/* PORTFOLIO */
+
+
+.portfolio-link{
+
+text-decoration:none;
+color:#071b35;
+
+}
+
+
+
+.portfolio-intro{
+
+font-size:20px;
+max-width:700px;
+margin:20px auto;
+
+}
+
+
+
+.sample-page{
+
+width:500px;
+max-width:90%;
+border-radius:20px;
+box-shadow:0 10px 25px #ddd;
+
+}
+
+
 
 
 
@@ -421,6 +474,9 @@ border-radius:15px;
 
 
 
+
+
+
 footer{
 
 background:#071b35;
@@ -429,6 +485,8 @@ padding:20px;
 text-align:center;
 
 }
+
+
 
 
 
@@ -455,6 +513,8 @@ font-size:30px;
 .links{
 
 display:flex;
+flex-wrap:wrap;
+justify-content:center;
 
 }
 
@@ -462,6 +522,14 @@ display:flex;
 .cv-image img{
 
 width:250px;
+
+}
+
+
+
+.sample-page{
+
+width:300px;
 
 }
 
