@@ -521,7 +521,11 @@ justify-content:center;
 
 .cv-image img{
 
-width:250px;
+width:500px;
+max-width:90%;
+border-radius:15px;
+
+
 
 }
 
@@ -529,9 +533,34 @@ width:250px;
 
 .sample-page{
 
-width:300px;
+width:850px;
+max-width:95%;
+border-radius:20px;
+box-shadow:0 10px 25px #ddd;
 
 }
 
+
+
+
+}
+.view-btn{
+
+display:inline-block;
+margin-top:20px;
+background:#071b35;
+color:white;
+padding:12px 30px;
+border-radius:25px;
+text-decoration:none;
+font-weight:bold;
+
+}
+
+
+.view-btn:hover{
+
+background:#f5b400;
+color:black;
 
 }
