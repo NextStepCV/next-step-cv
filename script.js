@@ -3,8 +3,6 @@
 // ================================
 
 
-// بيانات الموقع
-
 let data = JSON.parse(localStorage.getItem("nextStepData")) || {
 
 packages:[
@@ -25,7 +23,6 @@ name:"Complete",
 price:"800 EGP",
 desc:"CV + LinkedIn + Cover Letter"
 }
-
 ],
 
 
@@ -53,11 +50,14 @@ desc:"Professional job cover letter"
 
 
 
-// عرض الخدمات
 
 function loadServices(){
 
+
 let box=document.getElementById("servicesContainer");
+
+if(!box) return;
+
 
 box.innerHTML="";
 
@@ -86,7 +86,8 @@ box.innerHTML += `
 
 
 
-// عرض الباقات
+
+
 
 function loadPackages(){
 
@@ -96,9 +97,11 @@ let box=document.getElementById("packagesContainer");
 let select=document.getElementById("packageSelect");
 
 
+if(!box) return;
+
+
 box.innerHTML="";
 select.innerHTML="";
-
 
 
 data.packages.forEach(item=>{
@@ -107,7 +110,6 @@ data.packages.forEach(item=>{
 box.innerHTML += `
 
 <div class="card">
-
 
 <h3>${item.name}</h3>
 
@@ -132,7 +134,9 @@ Choose
 select.innerHTML += `
 
 <option>
+
 ${item.name} - ${item.price}
+
 </option>
 
 `;
@@ -155,6 +159,9 @@ loadPackages();
 
 
 
+
+
+
 // ======================
 // WhatsApp
 // ======================
@@ -167,8 +174,8 @@ let phone="201599900095";
 
 
 let message =
-"السلام عليكم، عايز أطلب باقة: "
-+ name;
+`السلام عليكم، عايز أطلب باقة:
+${name}`;
 
 
 
@@ -190,9 +197,9 @@ window.open(
 
 
 
-// ======================
+
+
 // Form
-// ======================
 
 
 let form=document.getElementById("cvForm");
@@ -211,6 +218,7 @@ let name =
 document.getElementById("name").value;
 
 
+
 let pack =
 document.getElementById("packageSelect").value;
 
@@ -219,9 +227,12 @@ document.getElementById("packageSelect").value;
 let phone="201599900095";
 
 
+
 let message =
 `السلام عليكم
-الاسم: ${name}
+
+الاسم:
+${name}
 
 الباقة:
 ${pack}`;
@@ -250,9 +261,9 @@ window.open(
 
 
 
+
 // ======================
-// Admin Panel
-// 3 clicks
+// Admin open 3 clicks
 // ======================
 
 
@@ -260,6 +271,9 @@ let clicks=0;
 
 
 let logo=document.getElementById("logoClick");
+
+
+if(logo){
 
 
 logo.addEventListener("click",()=>{
@@ -286,10 +300,10 @@ document.getElementById("loginBox")
 }
 
 
-
 });
 
 
+}
 
 
 
@@ -297,9 +311,8 @@ document.getElementById("loginBox")
 
 
 
-// ======================
+
 // Login
-// ======================
 
 
 function login(){
@@ -317,10 +330,8 @@ document.getElementById("loginBox")
 .classList.add("hidden");
 
 
-
 document.getElementById("adminPanel")
 .classList.remove("hidden");
-
 
 
 openAdmin();
@@ -337,7 +348,6 @@ alert("Wrong Password");
 }
 
 
-
 }
 
 
@@ -347,9 +357,8 @@ alert("Wrong Password");
 
 
 
-// ======================
-// Admin Edit
-// ======================
+
+// Admin panel
 
 
 function openAdmin(){
@@ -389,7 +398,6 @@ value="${item.desc}">
 
 </div>
 
-
 `;
 
 
@@ -398,6 +406,7 @@ value="${item.desc}">
 
 
 }
+
 
 
 
@@ -430,8 +439,11 @@ document.getElementById("pdesc"+index).value;
 
 
 localStorage.setItem(
+
 "nextStepData",
+
 JSON.stringify(data)
+
 );
 
 
@@ -449,10 +461,6 @@ alert("Saved Successfully");
 
 
 
-
-// ======================
-// Exit Admin
-// ======================
 
 
 function closeAdmin(){
