@@ -544,14 +544,16 @@ box-shadow:0 10px 25px #ddd;
 
 
 }
+/* Portfolio buttons */
+
 .view-btn{
 
 display:inline-block;
 margin-top:20px;
 background:#071b35;
-color:white;
-padding:12px 30px;
-border-radius:25px;
+color:white !important;
+padding:12px 35px;
+border-radius:30px;
 text-decoration:none;
 font-weight:bold;
 
@@ -561,6 +563,36 @@ font-weight:bold;
 .view-btn:hover{
 
 background:#f5b400;
-color:black;
+color:black !important;
 
+}
+
+
+/* all portfolio pages */
+
+nav{
+
+background:white;
+padding:18px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+box-shadow:0 5px 20px #ddd;
+
+}
+
+
+.sample-page{
+
+width:850px !important;
+max-width:95%;
+}
+
+
+.cv-image img{
+
+width:500px !important;
+max-width:90%;
+
+}
 }
