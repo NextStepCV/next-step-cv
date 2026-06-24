@@ -582,17 +582,28 @@ box-shadow:0 5px 20px #ddd;
 }
 
 
-.sample-page{
+/* Make portfolio samples bigger */
 
-width:850px !important;
-max-width:95%;
+.sample-page{
+    width:900px !important;
+    height:auto;
+    max-width:95%;
 }
 
 
 .cv-image img{
+    width:600px !important;
+    height:auto;
+    max-width:95%;
+}
 
-width:500px !important;
-max-width:90%;
 
+.cv-image{
+    width:650px;
+}
+
+
+.compare{
+    align-items:flex-start;
 }
 }
